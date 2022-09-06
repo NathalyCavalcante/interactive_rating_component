@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.938rem;
+    margin: 1.5rem;
+}
+
+.main_box, .thankyou_box {    
+    max-width: 400px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 1.563rem;
+    padding: 2rem 1.5rem;
+}
+
+.thankyou_box {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.main_box img {
+    background-color: hsl(217, 21%, 22%);
+    border-radius: 50%;
+    padding: 1rem;
+   
+}
+
+img {
+    max-width: 100%;
+} 
+
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.thankyou_box h2 {
+    margin-top: 1rem;
+    font-size: 1.875em;
+}
+
+.thankyou_box img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+p {
+    line-height: 1.6;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+li {
+    display: inline; 
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.rtng-btn {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: hsl(217, 21%, 22%);
+    color: hsl(217, 12%, 63%);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: inherit;
+    font-size: 1rem;
+    user-select: none;
+    outline: none;
+    padding-top: 0.3rem;
+    transition: 0.3s;
+}
+
+.rtng-btn:hover {
+    background-color:  hsl(217, 12%, 63%);
+    color: white;
+}
+
+.rtng-btn:focus {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    height: 2.75rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;   
+    font-family: inherit;
+    font-size: 0.9rem;  
+     
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+.result {
+    display: flex;
+    display: inline-block;
+    background-color: hsl(217, 21%, 22%);
+    color: hsl(25, 97%, 53%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.938rem;
+    padding: 0.3rem 1rem 0;
+}
+
+.credits {
+    position:absolute;
+    bottom:0;
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: hsl(217, 12%, 63%);
+
+}
+.credits a {   
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(217, 20%, 75%);
+}
+      
+.credits a:hover {   
+       color:  hsl(25, 92%, 63%);
+}
+
+@media (max-width: 426px) {
+    li {
+        margin: 0;
+    }
+    .main_box .thankyou_box p {
+        font-size: 14px;
+    }
+}
